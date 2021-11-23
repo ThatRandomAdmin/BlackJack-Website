@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta title="Blackjack">
+<meta name="description" content="My attepmt at a blackjack game.">
+<meta name="keywords" content="HTML,CSS,PHP,JavaScript">
+<meta name="author" content="ThatRandomDev">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="blackjack_st.css">
+<script src="blackjack_assets/scripts/blackjack.js"></script>
+<script src="blackjack_assets/scripts/black_out.js"></script>
+<script src="blackjack_assets/scripts/re-direct.js"></script>
+
+</head>
+<body onload="setTimeout('redirect()', 300)">
+<div class="banner"><h1>BlackJack</h1></div>
+<div class="header">
+	<div class="dropdown">
+		<button class="dropbtn">Menu</button>
+		<div class="dropdown-content">
+			<a href="http://thatrandomadmin.rf.gd/">Home</a>
+			<a href="http://thatrandomadmin.rf.gd/blackjack/pc/">Blackjack</a>
+			<a href="http://thatrandomadmin.rf.gd/contact/">Contact Me</a>
+		</div>
+	</div>
+</div>
+<div class="leftcol">
+	<td><p style=" text-indent: 20px;">Accounts and leaderboards will go here, hopefully :)</p></td>
+</div>
+<div class="content">
+	<div id="cover"></div>
+	<div id="win_dialog">
+		<tr>
+			<td><h1 style="color:white;text-align:center;margin-top:5.5vmin;" id="score">Your score was: 0</h1></td>
+			<td><h1 style="color:white;text-align:center;margin-top:7.5vmin;" id="ai">Ai's score was: 0</h1></td>
+		</tr>
+	</div>
+	<div id="lose_dialog">
+		<tr>
+			<td><h1 style="color:white;text-align:center;margin-top:5.7vmin;" id="lost_score">Your score was: 0</h1></td>
+			<td><h1 style="color:white;text-align:center;margin-top:3.8em;" id="lost_ai">Ai's score was: 0</h1></td>
+		</tr>
+	</div>
+	<tr>
+		<td><h1 style="text-align:center;margin-top:3vh;">&nbsp; &nbsp; ----Cards---- &nbsp; &nbsp;</h1></td>
+		<td><h1 style="text-align:center;margin-top:4vh;" id="card_score">Your score is: 0</h1></td>
+	</tr>
+	<tr>
+		<table style="margin-left:auto;margin-right:auto;margin-top:3vh;max-width:60vw;">
+			<tr>
+				<td><img src="blackjack_assets/images/card_back.png" id="crd1" alt="" width="130" height="190" style="display:block;"></td>
+				<td><img src="blackjack_assets/images/card_back.png" id="crd2" alt="" width="130" height="190" style="display:block;"></td>
+				<td><img src="blackjack_assets/gifs/loading.gif" id="crd3" alt="" width="130" height="190" style="display:none;" /></td>
+				<td><img src="blackjack_assets/gifs/loading.gif" id="crd4" alt="" width="130" height="190" style="display:none;" /></td>
+				<td><img src="blackjack_assets/gifs/loading.gif" id="crd5" alt="" width="130" height="190" style="display:none;" /></td>
+				<td><img src="blackjack_assets/gifs/loading.gif" id="crd6" alt="" width="130" height="190" style="display:none;" /></td>
+				<td><img src="blackjack_assets/gifs/loading.gif" id="crd7" alt="" width="130" height="190" style="display:none;" /></td>
+				<td><img src="blackjack_assets/gifs/loading.gif" id="crd8" alt="" width="130" height="190" style="display:none;" /></td>
+			</tr>
+		</table>
+	</tr>
+	<div class="hit">
+		<tr>
+			<td><button style="background-color:red;border-radius:50%;padding:16px 32px;font-size:20px;" id="button_hit" onclick="hit()" disabled>Hit</button></td>
+		</tr>
+	</div>
+	<div class="stand">
+		<tr>
+			<td><button style="background-color:red;border-radius:50%;padding:16px 32px;font-size:20px;" id="button_stand" onclick="stand()" disabled>Stand</button></td>
+		</tr>
+	</div>
+	<div class="start">
+		<tr>
+			<td><button style="background-color:red;border-radius:50%;padding:16px 32px;font-size:20px;" id="button_start" onclick="deck_start()">Start</button></td>
+			<td><button style="background-color:red;border-radius:50%;padding:16px 32px;font-size:20px;display: none;" id="button_reset" onclick="deck_reset()">Reset</button></td>
+		</tr>
+	</div>
+</div>
+<div class="footer">
+	<ul>
+		<td>----</td>
+		<a href="http://thatrandomadmin.rf.gd/">Home</a>&nbsp;|
+		<a href="http://thatrandomadmin.rf.gd/blackjack/pc/">Blackjack</a>&nbsp;|
+		<a href="http://thatrandomadmin.rf.gd/contact/">Contact me</a>
+		<td>----</td>
+	</ul>
+</div>
+</body>
+</html>

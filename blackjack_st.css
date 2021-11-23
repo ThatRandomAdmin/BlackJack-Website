@@ -1,0 +1,203 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 98vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+
+.dropdown-content a:hover {background-color: #36454F;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #36454F;}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#cover {
+display: none;
+position: absolute;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 100%;
+background: gray;
+filter: alpha(Opacity=50);
+opacity: 0.5;
+-moz-opacity: 0.5;
+-khtml-opacity: 0.5
+}
+
+#win_dialog {
+display: none;
+left: 25vw;
+top: 25vh;
+transform: translate(0vmax, 0vmin);
+width: 400px;
+height: 250px;
+position: absolute;
+z-index: 100;
+background-image: url("blackjack_assets/images/win.png");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center center;
+padding: 2px;
+font: 10pt tahoma;
+border: 1px solid gray
+}
+
+#lose_dialog {
+display: none;
+left: 25vw;
+top: 25vh;
+transform: translate(0vmax, 0vmin);
+width: 400px;
+height: 250px;
+position: absolute;
+z-index: 100;
+background-image: url("blackjack_assets/images/lost.png");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center center;
+padding: 2px;
+font: 10pt tahoma;
+border: 1px solid gray
+}
+
+.dropbtn {
+	background-color: #36454F;
+	color: white;
+	padding: 1vh;
+	font-size: 2vh;
+	border: none;
+	text-align: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.dropdown-content {
+  display: none;
+  position: block;
+  background-color: #36454F;
+  min-width: 100vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.hit {
+  margin: 0;
+  position: absolute;
+  top: 60vh;
+  left: 20vw;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.stand {
+  margin: 0;
+  position: absolute;
+  top: 60vh;
+  left: 60vw;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.start {
+  margin: 0;
+  position: absolute;
+  top: 70vh;
+  left: 40vw;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.banner {
+  width: 100%;
+  height: 8vh auto;
+  text-align: center;
+  padding: 0%;
+  border: 1px solid black;
+  color: white;
+  background: #36454F;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  margin: auto;
+  width: 100%;
+  height: 4vh;
+  text-align: center;
+  color: white;
+  background: #36454F;
+  padding: 10px 0%;
+  border: none;
+}
+.leftcol {
+  background: #006400;
+  float: left;
+  width: 20%;
+  height: 78vh;
+  padding: 10px 0%;
+}
+.content {
+  background-image: url("blackjack_assets/images/poker_table.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  float: right;
+  width: 80%;
+  height: 78vh;
+  text-align: center;
+  padding: 10px 0%;
+}
+
+.hand {
+	max-height: 10vh;
+	max-width: 5vh;
+}
+
+.footer {
+  background: #36454F;
+  clear: both;
+  text-align: center;
+  width: 100%;
+  height: 5vh;
+  padding: 10px 0%;
+  border: 1px solid black;
+}
